@@ -1,0 +1,8 @@
+AuthUserFile docs/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Запароленная зона"
+AuthType Basic
+
+<limit GET POST>
+require valid-user
+</limit>

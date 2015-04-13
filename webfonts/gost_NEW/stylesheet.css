@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'gost NEW';
+	src: url('gost_26.008-85-webfont.eot');
+	src: url('gost_26.008-85-webfont.eot?#iefix') format('embedded-opentype'),
+		url('gost_26.008-85-webfont.woff') format('woff'),
+		url('gost_26.008-85-webfont.ttf') format('truetype'),
+		url('gost_26.008-85-webfont.svg') format('svg');
+}

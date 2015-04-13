@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+@import url("../webfonts/gost_NEW/stylesheet.css");
+@import url("../webfonts/gost_BOLD/stylesheet.css");
+
+
+/* CSS Document */
+
+/*******************************
+ =============HTML5=============
+ *******************************/
+ 
+section, header, footer, aside, article, nav {
+	display:block;	
+}
+
+body, html {
+	background-color: #F8F8F3;
+	font-family: "gost NEW";
+	font-size: 12px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+    height: 100%;
+}
+.page-buffer {
+	height: 80px;
+}
+
+a {
+	text-decoration: none;
+	color:black;	
+}
+
+a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+p {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "gost NEW";
+	text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "gost NEW";
+	text-transform: uppercase;
+	font-weight:normal;
+}
+
+
+
+#wrapper {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	min-height: 100%;
+	margin-bottom: -80px;
+	max-height: 1080px;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+h3 {
+	font-size: 15px;
+	text-align:center;
+}
+
+#logo {
+	padding-top: 20px;
+	text-align:center;
+}
+
+ul {
+	overflow:hidden;
+}
+
+li {
+	list-style:none;
+}
+
+.container_12 {
+	position:relative;
+}
+
+/*******************************
+ ==========MENU STYLES==========
+ *******************************/
+
+nav {
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	height: 35px;
+	line-height: 35px;
+	z-index: 800;
+	clear: both;
+	position: relative;
+}
+
+nav li {
+	float: left;
+	margin-left: 0px;
+	margin-right: 1em;
+	text-transform: uppercase;
+}
+
+	#navcenter {
+		margin-left:auto;
+		margin-right: auto;
+		width: 630px;
+	}
+	
+	nav ul li a {
+	font-weight: normal;
+	padding: 8px;
+	}
+	
+	nav ul li a:hover, nav ul li .selected {
+	background:#80C6C6;
+	border-bottom:none;
+	text-decoration:none;
+	-webkit-transition:background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition:background 0.3s;
+	transition:background 0.3s;
+	} 
+	
+	
+/*******************************
+ =============CONTENT===========
+ *******************************/
+
+.graphics {
+	text-align:center;
+ }
+ 
+ 
+.order {
+	overflow: hidden;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	background:#80C6C6;
+	position: relative;
+	width: 140px;
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 1.2em;
+	clear: both;
+	height: 50px;
+	line-height: 50px;
+	z-index: 999;
+}
+ 
+ /*******************************
+ ========SOCIAL BUTTONS=========
+ *******************************/
+ 
+ #stickyFooter {
+	overflow: hidden;
+	clear:both;
+	margin-top: -80px;
+	height: 80px;
+	position:relative;
+}
+
+ #stickyFoo {
+	overflow: hidden;
+	clear:both;
+	height: 80px;
+	position:relative;
+}
+
+#copyrights {
+	position: relative;
+	text-align: center;
+}
+
+.socials {
+	padding: 0px;
+	margin:0 auto;
+	position: relative;
+	width: 140px;
+	text-align: center;
+	clear: both;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+
+.socials a {
+	margin: 0px;
+	padding-top: 12px;
+	padding-right: 6px;
+	padding-bottom: 14px;
+	padding-left: 6px;
+}
+
+.socials a:hover {
+	background:#80C6C6;
+	border-bottom:none;
+	text-decoration:none;
+	-webkit-transition:background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition:background 0.3s;
+	transition:background 0.3s;
+}
+
+.kverkoBG p {
+	text-align: justify;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+
+.kitImages li {
+	position: relative;
+	margin-left: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+.kitDescr {
+	padding: 20px;
+	text-align: left;
+}
+
+#firstKit {
+	border-bottom: 1px solid #d5d5d5;
+}
+
+#secondKit {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+#thirdKit {
+	border-top: 1px solid #fff;
+}
+
+q {font-size: 14px;}
+
+.order2 {
+	overflow: hidden;
+	padding: 0px;
+	margin-left: 20px;
+	margin-bottom: 20px;	
+	background:#80C6C6;
+	position: relative;
+	width: 100px;
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 1.2em;
+	clear: both;
+	height: 30px;
+	line-height: 30px;
+	z-index: 999;
+}
+
+.paragraph {
+	position: relative;
+	width: 600px;
+	height: auto;
+	text-align: center;
+	font-size: 14px;
+	margin: 0px auto 20px auto;
+}
+
+	.justify {text-align: justify;}
+
+.title {
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: "gost NEW";
+}

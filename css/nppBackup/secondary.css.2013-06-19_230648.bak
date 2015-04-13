@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@import url("../webfonts/gost_NEW/stylesheet.css");
+
+/* CSS Document */
+
+/*******************************
+ =============HTML5=============
+ *******************************/
+ 
+section, header, footer, aside, article, nav {
+	display:block;	
+}
+
+body, html {
+	background-color: #F8F8F3;
+	font-family: "gost NEW";
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* html #wrapper {
+    height: 100%;
+}
+.page-buffer {
+	height: 80px;
+}
+
+a {
+	text-decoration: none;
+	color:black;	
+}
+
+a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+p {
+	font-size: 12px;
+	line-height: 12px;
+	font-family: "gost NEW";
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "gost NEW";
+	text-transform: uppercase;
+	font-weight:normal;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+/*******************************
+ ==========MENU STYLES==========
+ *******************************/
+
+nav {
+	overflow: hidden;
+	float: left;
+	margin-top: 30px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 35px;
+	z-index: 800;
+	clear: both;
+	position: relative;
+}
+
+nav li {
+	float: left;
+	margin-left: 0px;
+	margin-right: 25px;
+	text-transform: uppercase;
+}
+	
+	nav ul li a {
+	font-size: 13px;
+	font-weight: normal;
+	padding-top: 8px;
+	padding-right: 4px;
+	padding-bottom: 8px;
+	padding-left: 4px;
+	}
+	
+	nav ul li a:hover, nav ul li .selected {
+	background:#80C6C6;
+	border-bottom:none;
+	text-decoration:none;
+	-webkit-transition:background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition:background 0.3s;
+	transition:background 0.3s;
+	}

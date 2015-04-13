@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+@import url("../webfonts/gost_NEW/stylesheet.css");
+
+/* CSS Document */
+
+/*******************************
+ =============HTML5=============
+ *******************************/
+ 
+section, header, footer, aside, article, nav {
+	display:block;	
+}
+
+body, html {
+	background-color: #F8F8F3;
+	font-family: "gost NEW";
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* html #wrapper {
+    height: 100%;
+}
+.page-buffer {
+	height: 80px;
+}
+
+a {
+	text-decoration: none;
+	color:black;	
+}
+
+a:hover {
+	text-decoration: none;
+	color:white;
+}
+
+p {
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "gost NEW";
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "gost NEW";
+	text-transform: uppercase;
+	font-weight:normal;
+}
+
+#wrapper {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	min-height: 100%;
+	margin-bottom: -80px;
+	position: relative;
+}
+
+#logo {
+	padding: 0px;
+	height: 127px;
+	position: absolute;
+	z-index: 200;
+	float: left;
+	margin-top: 35px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 35px;
+	text-align: center;
+	width: auto;
+}
+
+/*******************************
+ =========SLIDER STYLES=========
+ *******************************/
+ 
+ .ei-slider{
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	height: 360px;
+	margin: 0 auto;
+}
+.ei-slider-loading{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:999;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+	text-align: center;
+	line-height: 360px;
+}
+.ei-slider-large{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	height: 100%;
+	width: auto;
+}
+.ei-slider-large li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.ei-slider-large li img{
+	width: 100%;
+}
+.ei-slider-thumbs{
+	height: 13px;
+	margin: 0 auto;
+	position: relative;
+}
+.ei-slider-thumbs li{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.ei-slider-thumbs li.ei-slider-element{
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	height: 100%;
+	z-index: 10;
+	text-indent: -9000px;
+	background: #000;
+	background: rgba(0,0,0,0.9);
+}
+.ei-slider-thumbs li a{
+	display: block;
+	text-indent: -9000px;
+	background: #666 ;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	-webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+.ei-slider-thumbs li a:hover{
+	background-color: #f0f0f0;
+}
+.ei-slider-thumbs li img{
+	position: absolute;
+	bottom: 50px;
+	opacity: 0;
+	z-index: 999;
+	max-width: 100%;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	-webkit-box-reflect: 
+        below 0px -webkit-gradient(
+            linear, 
+            left top, 
+            left bottom, 
+            from(transparent), 
+            color-stop(50%, transparent), 
+            to(rgba(255,255,255,0.3))
+            );
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ei-slider-thumbs li:hover img{
+	opacity: 1;
+	bottom: 13px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*******************************
+ ==========MENU STYLES==========
+ *******************************/
+
+.menuBar {
+	overflow: hidden;
+	float: left;
+	margin-top: 30px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 35px;
+	z-index: 800;
+	clear: both;
+	position: relative;
+}
+
+.menuBar li {
+	float: left;
+	margin-left: 0px;
+	margin-right: 25px;
+	text-transform: uppercase;
+}
+	
+	.menuBar ul li a {
+	font-size: 13px;
+	font-weight: normal;
+	padding-top: 8px;
+	padding-right: 4px;
+	padding-bottom: 8px;
+	padding-left: 4px;
+	}
+	
+	.menuBar ul li a:hover, .menuBar ul li .selected {
+	background:#80C6C6;
+	border-bottom:none;
+	text-decoration:none;
+	-webkit-transition:background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition:background 0.3s;
+	transition:background 0.3s;
+	}
+
+/*******************************
+ ========SOCIAL BUTTONS=========
+ *******************************/
+ 
+ .footWrap {
+	position: relative;
+	height: 80px;
+	width: 100%;
+	clear: both;
+	padding: 0px;
+}
+#copyrights {
+	position: relative;
+	text-align: center;
+}
+
+.socialButtons {
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	width: auto;
+	text-align: center;
+	clear: both;
+	height: 50px;
+	line-height: 50px;
+}
+
+.socialButtons a {
+	padding-top: 16px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+}
+
+.socialButtons a:hover {
+	background:#80C6C6;
+	border-bottom:none;
+	text-decoration:none;
+	-webkit-transition:background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition:background 0.3s;
+	transition:background 0.3s;
+}
+
+
+.logoFont {
+	font-weight: normal;
+	color: #f1f1f2;
+}

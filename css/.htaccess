@@ -1,0 +1,8 @@
+AuthUserFile css/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Authentification required"
+AuthType Basic
+
+<limit GET POST>
+require valid-user
+</limit>
