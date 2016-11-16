@@ -19,7 +19,9 @@
   "homepage": "https://github.com/utkapodsousom/kverko#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.11",
+    "mssql": "^3.3.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
