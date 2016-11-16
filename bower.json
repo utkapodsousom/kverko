@@ -1,0 +1,36 @@
+{
+  "name": "kverko",
+  "description": "Showcase project for hiring",
+  "main": "app.js",
+  "authors": [
+    "Michael Kopytin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/utkapodsousom/kverko",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.min.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "css/font-awesome.min.css",
+        "scss/font-awesome.scss"
+      ]
+    }
+  }
+}

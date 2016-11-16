@@ -12,11 +12,29 @@
 <meta name="distribution" content="global" />
 <meta name="revisit-after" content="10 days" />
 <meta name="Robots" content="All" />
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="Shortcut Icon" href="favicon.ico" />
 <link rel="icon" type="image/png" href="http://www.kverko.ru/images/favicon.png">
-<link rel="stylesheet" type="text/css" href="css/reset.css" />
-<link href="css/main.css" rel="stylesheet" type="text/css">
+<!-- bower:css -->
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="/css/960_12_col.css">
+<link rel="stylesheet" href="/css/about.css">
+<link rel="stylesheet" href="/css/component.css">
+<link rel="stylesheet" href="/css/desktop.css">
+<link rel="stylesheet" href="/css/elastislide.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/secondary.css">
+<link rel="stylesheet" href="/css/text.css">
+<!-- endinject -->
+
+<!-- bower:js -->
+<script src="/lib/jquery/dist/jquery.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
 </head>
 
 <body>
@@ -24,10 +42,10 @@
     	<div id="headerContainer">
         	<header>
                 <div id="ei-slider" class="ei-slider">
-                
+
                     <div id="logo"> <a href="http://www.kverko.ru" target="_self"><img src="images/logo.png" alt="KVERKO.RU" width="127" height="127"><h1 class="logoFont">онлайн-мастерская</h1></a>
                     </div>
-                
+
                     <ul class="ei-slider-large">
 						<li>
                             <img src="images/large/6.jpg" alt="image06"/>
@@ -108,7 +126,7 @@
                 </div><!-- ei-slider -->
         	</header><!-- end of header -->
         </div><!-- end of headerContainer -->
-            
+
         <nav id="menuBar">
             <ul>
                 <li>
@@ -130,35 +148,43 @@
                     	<a href="about.html">о нас</a>
                 </li>
             </ul>
-        </nav><!-- end of nav -->   
-        
+        </nav><!-- end of nav -->
+
         <footer id="footWrap">
         	<div id="socialButtons">
             	<a href="https://www.facebook.com/pages/Kverko/321876861273948" title="Follow Us!" target="_blank"><img src="images/facebook.png" alt="Facebook" width="26" height="26"  /></a>
     			<a href="http://vk.com/kverkodoit" title="Подпишитесь!" target="_blank"><img src="images/vk.png" alt="Вконтакте" width="26" height="26" /></a>
     			<a href="http://instagram.com/kverko#" title="Поделитесь!" target="_blank"><img src="images/instagram.png" alt="Instagram" width="26" height="26" /></a>
             </div>
-            
+
             <div id="copyrights">
             	<h6>Kverko.RU © 2013. Все права защищены.</h6>
             </div>
         </footer><!-- end of footer -->
-           	
+
     </div><!-- end of wrapper -->
-    
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('#ei-slider').eislideshow({
-					animation			: 'center',
-					autoplay			: true,
-					slideshow_interval	: 5000,
-					titlesFactor		: 0
-                });
-            });
-        </script>
+
+		<!-- inject:js -->
+		<script src="/js/gallery.js"></script>
+		<script src="/js/grid.js"></script>
+		<script src="/js/jquery-1.10.1.min.js"></script>
+		<script src="/js/jquery.easing.1.3.js"></script>
+		<script src="/js/jquery.eislideshow.js"></script>
+		<script src="/js/jquery.elastislide.js"></script>
+		<script src="/js/jquery.tmpl.min.js"></script>
+		<script src="/js/modernizr.custom.js"></script>
+		<!-- endinject -->
+
+    <script type="text/javascript">
+	$(function() {
+		$('#ei-slider').eislideshow({
+			animation: 'center',
+			autoplay: true,
+			slideshow_interval: 5000,
+			titlesFactor: 0
+		});
+	});
+</script>
 
 </body>
 </html>

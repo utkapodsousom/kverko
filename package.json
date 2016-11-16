@@ -1,0 +1,30 @@
+{
+  "name": "kverko",
+  "version": "1.1.0",
+  "description": "Showcase project for hiring",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkapodsousom/kverko.git"
+  },
+  "author": "Michael Kopytin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utkapodsousom/kverko/issues"
+  },
+  "homepage": "https://github.com/utkapodsousom/kverko#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-nodemon": "^2.2.1",
+    "wiredep": "^4.0.0"
+  }
+}
